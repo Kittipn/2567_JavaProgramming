@@ -1,4 +1,4 @@
 studentId: 2413110483
 studentName: Kittipon Ruangvirachaikul
-Topic: gitHub
-Date: 11/20/2024
+Topic: Variable and Input
+Date: 11/27/2024
