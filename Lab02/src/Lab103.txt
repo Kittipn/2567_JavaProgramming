@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+
+public class Lab103 {
+
+	public static void main(String[] args) {
+	
+		int minuteInput = Integer.parseInt(JOptionPane.showInputDialog(null, "Input Parking minute: "));
+		
+		int hour = minuteInput / 60;
+		int minute = minuteInput % 60;
+		
+		int hourPrice = hour * 50;
+		double minutePriceRaw = minute * 25;
+		double minutePrice = minutePriceRaw / 100;
+		double totalPrice = hourPrice + minutePrice;
+		
+		
+		JOptionPane.showMessageDialog(null, "Parking time is " + hour + " Hour " + minute + " Minute. \n"
+									  + "Amout to be paid is " + totalPrice + " baht.");
+	}
+
+}

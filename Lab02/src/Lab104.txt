@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+
+public class Lab104 {
+
+	public static void main(String[] args) {
+
+		JOptionPane.showMessageDialog(null, "Welcome to payroll application");
+		
+		String name = JOptionPane.showInputDialog(null, "Enter employee name");
+		
+		double workHour = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter employee work hours"));
+		
+		double wage = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter employee hourly wage"));
+		
+		double grossEarning = workHour * wage;
+		
+		double taxRate = 0.15;
+		
+		double tax = grossEarning * taxRate;
+		
+		double netEarning = grossEarning - tax;
+		
+		JOptionPane.showMessageDialog(null, 
+										"Employee name : " + name + "\n" +
+										"Hours worked  : " + workHour + "\n" +
+										"Hourly wage   : " + wage + "\n" +									"Tax rate : " + taxRate + "\n" +									"Net Earning   : " + netEarning);
+	}
+
+}

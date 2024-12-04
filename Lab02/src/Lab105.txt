@@ -1,0 +1,37 @@
+import javax.swing.JOptionPane;
+public class Lab105 {
+
+	public static void main(String[] args) {
+		
+		String id = JOptionPane.showInputDialog(null, "This program calculates the total cost of a CD order \n" +
+										  			  "Please enter the ID of the CD");
+		
+		String title = JOptionPane.showInputDialog(null, "Please enter the title of the CD");
+		
+		double CDPrice = Double.parseDouble(JOptionPane.showInputDialog(null, "Please enter the the price of the CD"));
+		
+		int CDQuantity = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter the quantity of CD to be purchased"));
+		
+		double subTotal = CDPrice * CDQuantity;	
+		
+		double taxRate = 6.25;
+		
+		double tax =  subTotal * (taxRate/100);
+		
+		double total = subTotal + tax;
+		
+		JOptionPane.showMessageDialog(null, "Summary of the transaction: \n" + 
+											"\n" +
+											"CD Id : " + id + "\n" +
+											"CD Title : " + title + "\n" +
+											"CD Unit Price : " + CDPrice + "\n" +
+											"CD Quantity : " + CDQuantity +
+											"\n" + "\n" +
+											"Subtotal : $" + subTotal + "\n" +
+											"Tax rate : " + taxRate + "%\n" +
+											"Total : $" + total + "\n" +
+											"\n" + "\n" +
+											"End of Program");
+	}
+
+}
