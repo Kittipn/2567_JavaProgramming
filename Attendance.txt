@@ -1,4 +1,4 @@
 studentId: 2413110483
 studentName: Kittipon Ruangvirachaikul
-Topic: Method
-Date: 12/18/2024
+Topic: Array	
+Date: 12/25/2024
