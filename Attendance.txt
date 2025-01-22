@@ -1,4 +1,4 @@
 studentId: 2413110483
 studentName: Kittipon Ruangvirachaikul
-Topic: Class and Object	
+Topic: Encapsulation Concept	
 Date: 22/01/2024
