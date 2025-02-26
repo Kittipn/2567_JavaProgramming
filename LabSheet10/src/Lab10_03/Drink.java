@@ -57,9 +57,25 @@ public class Drink {
     	}
     }
 
-    public char getSize() {
-        return this.size;
+    public int getSizePrice() {
+        switch(size) {
+        
+        case 'S':
+        	return 15;
+        case 'M':
+        	return 20;
+        case 'L':
+        	return 25;
+        default:
+        	return 0;
+        }
     }
+    
+    public int getTotalPrice() {
+    	return getTypePrice() + getSizePrice();
+    }
+    
+    
 	
 
 }
