@@ -1,4 +1,4 @@
 studentId: 2413110483
 studentName: Kittipon Ruangvirachaikul
-Topic: Inheritance Concept / Abstract and Interface
-Date: 19 / 02 / 2025
+Topic: File Operation
+Date: 26 / 02 / 2025
